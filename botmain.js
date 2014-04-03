@@ -36,7 +36,11 @@ client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand
 }
 if (message == "~attack") {
 client.network().sendChanMessage(channel, "You used"  + sys.attack(sys.rand(1, 559)) + "!");
-
+}
+var deaths=new Array("Fell to their doom.","Caught a glimpse of themselves in the mirror.","Fell into a sharpedo tank.");
+}
+if (message == "~death") {
+client.network().sendChanMessage(channel, "");
 
 }   
 }
